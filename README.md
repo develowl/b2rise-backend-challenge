@@ -10,7 +10,7 @@ Before running the tests, you should follow steps below:
 ```
 git clone https://github.com/develowl/b2rise-backend-challenge
 ```
-2 - Then, install dependencies with a package manager of your choice (this project is using (PNPM)[https://pnpm.io/pt/installation])
+2 - Then, install dependencies with a package manager of your choice (this project is using [PNPM](https://pnpm.io/pt/installation))
 ```
 pnpm install
 ```
