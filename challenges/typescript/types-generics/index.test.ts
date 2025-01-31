@@ -12,7 +12,7 @@ describe('Types and Generics manipulation', () => {
 
     expect(() =>
       extractValues(modifiedData, 'id' as keyof object)
-    ).toThrowError(new Error('Provided data should be an array of objects'));
+    ).toThrowError(new Error('Provided data must be an array of objects'));
   });
 
   it('should throw an error when field is not a key of object from data', () => {
