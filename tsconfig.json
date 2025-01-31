@@ -4,5 +4,7 @@
     "target": "es2017",
     "baseUrl": "./",
     "esModuleInterop": true
-  }
+  },
+  "include": ["challenges"],
+  "exclude": ["node_modules"]
 }
