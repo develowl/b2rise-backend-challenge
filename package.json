@@ -5,7 +5,7 @@
   "scripts": {
     "test:typescript-challenge": "vitest run ./challenges/1_typescript",
     "test:clean-code-challenge": "vitest run ./challenges/3_clean-code",
-    "test": "vitest"
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
