@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test:typescript-challenge": "vitest ./challenges/1_typescript",
-    "test:clean-code-challenge": "vitest ./challenges/3_clean-code",
+    "test:typescript-challenge": "vitest run ./challenges/1_typescript",
+    "test:clean-code-challenge": "vitest run ./challenges/3_clean-code",
     "test": "vitest"
   },
   "keywords": [],
