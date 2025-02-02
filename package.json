@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test:typescript-challenge": "vitest ./challenges/typescript",
+    "test:typescript-challenge": "vitest ./challenges/1_typescript",
     "test": "vitest"
   },
   "keywords": [],
