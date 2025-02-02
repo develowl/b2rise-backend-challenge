@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "test:typescript-challenge": "vitest ./challenges/1_typescript",
+    "test:clean-code-challenge": "vitest ./challenges/3_clean-code",
     "test": "vitest"
   },
   "keywords": [],
