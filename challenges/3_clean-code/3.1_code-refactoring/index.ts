@@ -3,8 +3,14 @@ export type Item = {
   price: number;
 };
 
-export function processItems(items: Item[]) {
-  items
-    .filter((item) => item.price > 100)
-    .forEach((item) => console.log(`${item.name} is expensive`));
+export function processItems(items: Item[]): void {
+  items.filter(isExpensive).forEach(logExpensive);
+}
+
+function isExpensive(item: Item): boolean {
+  return item.price > 100;
+}
+
+function logExpensive(item: Item): void {
+  console.log(`${item.name} is expensive`);
 }
