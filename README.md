@@ -28,7 +28,7 @@ pnpm install
   ```
   pnpm test:clean-code-challenge
   ```
-- Running all test:
+- Running all tests:
   ```
   pnpm test
   ```
