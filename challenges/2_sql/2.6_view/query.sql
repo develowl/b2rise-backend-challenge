@@ -13,7 +13,7 @@ GO
 INSERT INTO
     transactions (account_id, transaction_date, amount) 
 VALUES
-    (1, '2024-06-10', 5000.00),
+  (1, '2024-06-10', 5000.00),
 	(2, '2024-06-15', 6000.00),
 	(3, '2024-07-12', 2200.00),
 	(2, '2024-07-25', 2800.00),
@@ -45,15 +45,23 @@ VALUES
 GO
 
 CREATE VIEW monthly_summary AS 
+WITH formatted_transactions AS (
+    SELECT 
+        t.account_id,
+        FORMAT(t.transaction_date, 'yyyy-MM') AS month_year,
+        t.amount
+    FROM 
+        transactions t
+)
 SELECT 
-    t.account_id, 
-    MONTH(t.transaction_date) AS month_year, 
-    SUM(t.amount) AS total
+    ft.account_id, 
+    ft.month_year, 
+    SUM(ft.amount) AS total
 FROM 
-    transactions t
+    formatted_transactions ft
 GROUP BY 
-    t.account_id, 
-    MONTH(t.transaction_date);
+    ft.account_id, 
+    ft.month_year;
 GO
 
 SELECT
