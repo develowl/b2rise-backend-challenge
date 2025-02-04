@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { calculateDiscount } from '.';
 
-describe('Complex logic refactoring', () => {
+describe('Complex logic refactoring (basic)', () => {
   it('should return correct value when is premium and the price is greatest than hundred', () => {
     const result = calculateDiscount(120, true);
 
